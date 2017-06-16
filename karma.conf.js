@@ -16,6 +16,9 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     files: [
+      "node_modules/pouchdb/dist/pouchdb.js",
+      'node_modules/stanza.io/build/stanzaio.bundle.js',
+      'node_modules/visibilityjs/lib/visibility.core.js',
       { pattern: './src/test.ts', watched: false }
     ],
     preprocessors: {
@@ -29,7 +32,7 @@ module.exports = function (config) {
       fixWebpackSourcePaths: true
     },
     angularCli: {
-      environment: 'dev'
+      environment: 'alpha'
     },
     reporters: config.angularCli && config.angularCli.codeCoverage
               ? ['progress', 'coverage-istanbul']

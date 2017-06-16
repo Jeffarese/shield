@@ -21,11 +21,19 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/pouchdb/dist/pouchdb.js",
+        "../node_modules/stanza.io/build/stanzaio.bundle.js",
+        "../node_modules/chart.js/dist/Chart.bundle.js",
+        "../node_modules/visibilityjs/lib/visibility.core.js",
+        "../node_modules/appboy-web-sdk/appboy.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "alpha": "environments/environment.alpha.ts",
+        "prod": "environments/environment.prod.ts",
+        "beta": "environments/environment.beta.ts"
       }
     }
   ],
