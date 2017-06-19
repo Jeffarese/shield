@@ -9,6 +9,7 @@ import { PersistencyService } from '../persistency/persistency.service';
 import { UserService } from '../user/user.service';
 import { User } from '../user/user';
 import { MessagesData, MessagesDataRecursive, StoredMessageRow, StoredMetaInfoData } from './messages.interface';
+import 'rxjs/add/operator/first';
 
 @Injectable()
 export class MessageService {

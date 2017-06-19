@@ -10,7 +10,7 @@ export class AlreadyLoggedGuard implements CanActivate {
 
   public canActivate() {
     if (this.userService.isLogged) {
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/']);
       return false;
     }
     return true;

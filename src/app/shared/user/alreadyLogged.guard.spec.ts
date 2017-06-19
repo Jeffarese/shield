@@ -63,12 +63,12 @@ describe('Guard: alreadyLogged', () => {
     expect(service.canActivate()).toBeTruthy();
   });
 
-  it('should redirect to dashboard if logged', () => {
+  it('should redirect to / if logged', () => {
     localStorage.setItem('access_token', 'abc');
     const location: Location = TestBed.get(Location);
     service.canActivate();
     location.subscribe((loc) => {
-      expect(loc.url).toBe('/dashboard');
+      expect(loc.url).toBe('/');
     });
   });
 

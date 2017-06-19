@@ -4,7 +4,6 @@ import { I18nService } from '../i18n/i18n.service';
 import { Message } from '../message/message';
 import { PLACEHOLDER_AVATAR } from '../user/user';
 import { PushNotificationsService } from 'angular2-notifications/src/push-notifications.service';
-import { Visibility } from 'tslint/lib/rules/completedDocsRule';
 
 export const NOTIFICATION_DURATION: number = 4000;
 

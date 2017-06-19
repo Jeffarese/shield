@@ -30,7 +30,7 @@
     "crypto-js": "^3.1.9-1",
     "ng2-haversine": "^0.1.1",
     "pouchdb": "^6.2.0",
-    "rxjs": "^5.1.0",
+    "rxjs": "5.3.0",
     "stanza.io": "https://github.com/Wallapop/stanza.io#v8.0.3",
     "visibilityjs": "^1.2.4",
     "zone.js": "^0.8.4"
