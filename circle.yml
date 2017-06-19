@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 7.5.0
+
+general:
+  artifacts:
+    - "./coverage"
+
+dependencies:
+  cache_directories:
+    - ~/.cache/yarn
+  override:
+    - yarn
